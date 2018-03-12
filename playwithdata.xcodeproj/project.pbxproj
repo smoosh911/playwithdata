@@ -14,6 +14,13 @@
 		06880CD92054921100284887 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06880CD72054921100284887 /* LaunchScreen.storyboard */; };
 		06880CE42054921100284887 /* playwithdataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06880CE32054921100284887 /* playwithdataTests.swift */; };
 		06880CEF2054921100284887 /* playwithdataUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06880CEE2054921100284887 /* playwithdataUITests.swift */; };
+		06880D022054925400284887 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06880D002054925400284887 /* Interface.storyboard */; };
+		06880D042054925400284887 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06880D032054925400284887 /* Assets.xcassets */; };
+		06880D0B2054925400284887 /* watchkit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 06880D0A2054925400284887 /* watchkit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		06880D102054925400284887 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06880D0F2054925400284887 /* InterfaceController.swift */; };
+		06880D122054925400284887 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06880D112054925400284887 /* ExtensionDelegate.swift */; };
+		06880D142054925400284887 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06880D132054925400284887 /* Assets.xcassets */; };
+		06880D182054925400284887 /* watchkit.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 06880CFE2054925400284887 /* watchkit.app */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,7 +38,46 @@
 			remoteGlobalIDString = 06880CCA2054921100284887;
 			remoteInfo = playwithdata;
 		};
+		06880D0C2054925400284887 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 06880CC32054921100284887 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 06880D092054925400284887;
+			remoteInfo = "watchkit Extension";
+		};
+		06880D162054925400284887 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 06880CC32054921100284887 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 06880CFD2054925400284887;
+			remoteInfo = watchkit;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		06880D1C2054925400284887 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				06880D0B2054925400284887 /* watchkit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		06880D202054925400284887 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				06880D182054925400284887 /* watchkit.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		06880CCB2054921100284887 /* playwithdata.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = playwithdata.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,6 +93,18 @@
 		06880CEA2054921100284887 /* playwithdataUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = playwithdataUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		06880CEE2054921100284887 /* playwithdataUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = playwithdataUITests.swift; sourceTree = "<group>"; };
 		06880CF02054921100284887 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		06880CFE2054925400284887 /* watchkit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = watchkit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		06880D012054925400284887 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		06880D032054925400284887 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		06880D052054925400284887 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		06880D0A2054925400284887 /* watchkit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "watchkit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		06880D0F2054925400284887 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		06880D112054925400284887 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		06880D132054925400284887 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		06880D152054925400284887 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		06880D212054993200284887 /* watchkit.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = watchkit.entitlements; sourceTree = "<group>"; };
+		06880D22205499C000284887 /* watchkit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "watchkit Extension.entitlements"; sourceTree = "<group>"; };
+		06880D23205499CE00284887 /* playwithdata.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = playwithdata.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +129,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		06880D072054925400284887 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -80,6 +145,8 @@
 				06880CCD2054921100284887 /* playwithdata */,
 				06880CE22054921100284887 /* playwithdataTests */,
 				06880CED2054921100284887 /* playwithdataUITests */,
+				06880CFF2054925400284887 /* watchkit */,
+				06880D0E2054925400284887 /* watchkit Extension */,
 				06880CCC2054921100284887 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,6 +157,8 @@
 				06880CCB2054921100284887 /* playwithdata.app */,
 				06880CDF2054921100284887 /* playwithdataTests.xctest */,
 				06880CEA2054921100284887 /* playwithdataUITests.xctest */,
+				06880CFE2054925400284887 /* watchkit.app */,
+				06880D0A2054925400284887 /* watchkit Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -97,6 +166,7 @@
 		06880CCD2054921100284887 /* playwithdata */ = {
 			isa = PBXGroup;
 			children = (
+				06880D23205499CE00284887 /* playwithdata.entitlements */,
 				06880CCE2054921100284887 /* AppDelegate.swift */,
 				06880CD02054921100284887 /* ViewController.swift */,
 				06880CD22054921100284887 /* Main.storyboard */,
@@ -125,6 +195,29 @@
 			path = playwithdataUITests;
 			sourceTree = "<group>";
 		};
+		06880CFF2054925400284887 /* watchkit */ = {
+			isa = PBXGroup;
+			children = (
+				06880D212054993200284887 /* watchkit.entitlements */,
+				06880D002054925400284887 /* Interface.storyboard */,
+				06880D032054925400284887 /* Assets.xcassets */,
+				06880D052054925400284887 /* Info.plist */,
+			);
+			path = watchkit;
+			sourceTree = "<group>";
+		};
+		06880D0E2054925400284887 /* watchkit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				06880D22205499C000284887 /* watchkit Extension.entitlements */,
+				06880D0F2054925400284887 /* InterfaceController.swift */,
+				06880D112054925400284887 /* ExtensionDelegate.swift */,
+				06880D132054925400284887 /* Assets.xcassets */,
+				06880D152054925400284887 /* Info.plist */,
+			);
+			path = "watchkit Extension";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,10 +228,12 @@
 				06880CC72054921100284887 /* Sources */,
 				06880CC82054921100284887 /* Frameworks */,
 				06880CC92054921100284887 /* Resources */,
+				06880D202054925400284887 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				06880D172054925400284887 /* PBXTargetDependency */,
 			);
 			name = playwithdata;
 			productName = playwithdata;
@@ -181,6 +276,40 @@
 			productReference = 06880CEA2054921100284887 /* playwithdataUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		06880CFD2054925400284887 /* watchkit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 06880D1D2054925400284887 /* Build configuration list for PBXNativeTarget "watchkit" */;
+			buildPhases = (
+				06880CFC2054925400284887 /* Resources */,
+				06880D1C2054925400284887 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				06880D0D2054925400284887 /* PBXTargetDependency */,
+			);
+			name = watchkit;
+			productName = watchkit;
+			productReference = 06880CFE2054925400284887 /* watchkit.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		06880D092054925400284887 /* watchkit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 06880D192054925400284887 /* Build configuration list for PBXNativeTarget "watchkit Extension" */;
+			buildPhases = (
+				06880D062054925400284887 /* Sources */,
+				06880D072054925400284887 /* Frameworks */,
+				06880D082054925400284887 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "watchkit Extension";
+			productName = "watchkit Extension";
+			productReference = 06880D0A2054925400284887 /* watchkit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -194,6 +323,11 @@
 					06880CCA2054921100284887 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 0;
+							};
+						};
 					};
 					06880CDE2054921100284887 = {
 						CreatedOnToolsVersion = 9.2;
@@ -204,6 +338,24 @@
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 06880CCA2054921100284887;
+					};
+					06880CFD2054925400284887 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 0;
+							};
+						};
+					};
+					06880D092054925400284887 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
@@ -223,6 +375,8 @@
 				06880CCA2054921100284887 /* playwithdata */,
 				06880CDE2054921100284887 /* playwithdataTests */,
 				06880CE92054921100284887 /* playwithdataUITests */,
+				06880CFD2054925400284887 /* watchkit */,
+				06880D092054925400284887 /* watchkit Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -249,6 +403,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		06880CFC2054925400284887 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06880D042054925400284887 /* Assets.xcassets in Resources */,
+				06880D022054925400284887 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		06880D082054925400284887 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06880D142054925400284887 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +451,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		06880D062054925400284887 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06880D122054925400284887 /* ExtensionDelegate.swift in Sources */,
+				06880D102054925400284887 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -292,6 +472,16 @@
 			isa = PBXTargetDependency;
 			target = 06880CCA2054921100284887 /* playwithdata */;
 			targetProxy = 06880CEB2054921100284887 /* PBXContainerItemProxy */;
+		};
+		06880D0D2054925400284887 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 06880D092054925400284887 /* watchkit Extension */;
+			targetProxy = 06880D0C2054925400284887 /* PBXContainerItemProxy */;
+		};
+		06880D172054925400284887 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 06880CFD2054925400284887 /* watchkit */;
+			targetProxy = 06880D162054925400284887 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -310,6 +500,14 @@
 				06880CD82054921100284887 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		06880D002054925400284887 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				06880D012054925400284887 /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -427,11 +625,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = KKY5YLK9HG;
+				DEVELOPMENT_TEAM = AZ9GHH2YFM;
 				INFOPLIST_FILE = playwithdata/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.playwithdata;
+				PRODUCT_BUNDLE_IDENTIFIER = com.playwithdata2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_BITCODE_FROM_COPIED_FILES = NO;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -442,11 +641,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = KKY5YLK9HG;
+				DEVELOPMENT_TEAM = AZ9GHH2YFM;
 				INFOPLIST_FILE = playwithdata/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.playwithdata;
+				PRODUCT_BUNDLE_IDENTIFIER = com.playwithdata2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_BITCODE_FROM_COPIED_FILES = NO;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -518,6 +718,84 @@
 			};
 			name = Release;
 		};
+		06880D1A2054925400284887 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AZ9GHH2YFM;
+				INFOPLIST_FILE = "watchkit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.playwithdata2.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = NO;
+				STRIP_BITCODE_FROM_COPIED_FILES = NO;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+			};
+			name = Debug;
+		};
+		06880D1B2054925400284887 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AZ9GHH2YFM;
+				INFOPLIST_FILE = "watchkit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.playwithdata2.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = NO;
+				STRIP_BITCODE_FROM_COPIED_FILES = NO;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+			};
+			name = Release;
+		};
+		06880D1E2054925400284887 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AZ9GHH2YFM;
+				IBSC_MODULE = watchkit_Extension;
+				INFOPLIST_FILE = watchkit/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.playwithdata2.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = NO;
+				STRIP_BITCODE_FROM_COPIED_FILES = NO;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+			};
+			name = Debug;
+		};
+		06880D1F2054925400284887 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AZ9GHH2YFM;
+				IBSC_MODULE = watchkit_Extension;
+				INFOPLIST_FILE = watchkit/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.playwithdata2.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = NO;
+				STRIP_BITCODE_FROM_COPIED_FILES = NO;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -553,6 +831,24 @@
 			buildConfigurations = (
 				06880CFA2054921100284887 /* Debug */,
 				06880CFB2054921100284887 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		06880D192054925400284887 /* Build configuration list for PBXNativeTarget "watchkit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				06880D1A2054925400284887 /* Debug */,
+				06880D1B2054925400284887 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		06880D1D2054925400284887 /* Build configuration list for PBXNativeTarget "watchkit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				06880D1E2054925400284887 /* Debug */,
+				06880D1F2054925400284887 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
